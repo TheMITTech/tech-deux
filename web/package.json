@@ -1,5 +1,5 @@
 {
-  "name": "tech-web",
+  "name": "web",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -9,9 +9,18 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "biome lint --write .",
+    "lint:fix": "biome check --write ."
   },
   "dependencies": {
+    "@astrojs/node": "^10.0.0",
     "astro": "^6.0.3"
-  }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.6"
+  },
+  "files": [
+    "dist/*"
+  ]
 }
