@@ -1,0 +1,3 @@
+# Tech Deux (WIP)
+
+A "modern" rewrite of the previous [Ruby-based thetech.com site](https://github.com/TheMITTech/thetech.com); we're so back...

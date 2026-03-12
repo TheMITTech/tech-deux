@@ -1,0 +1,12 @@
+{
+  "name": "tech-deux",
+  "version": "0.1",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "url": "https://github.com/TheMITTech/tech-deux"
+  },
+  "author": "The Tech",
+  "license": "MIT",
+  "packageManager": "pnpm@10.28.0"
+}
