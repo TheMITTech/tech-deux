@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "@astrojs/node": "^10.0.0",
-    "astro": "^6.0.3"
+    "astro": "^6.0.3",
+    "astro-seo": "^1.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.6"
