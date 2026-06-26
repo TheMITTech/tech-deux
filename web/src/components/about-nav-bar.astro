@@ -1,0 +1,75 @@
+---
+// Left-hand navigation for the About section.
+// Single source of truth for the section's pages — used to render the nav
+// and to keep every About page on the same template.
+export const aboutNav = [
+  { label: "General Information", href: "/about" },
+  { label: "Contact Us", href: "/about/contact" },
+  { label: "Opinion Policy", href: "/about/opinion-policy" },
+  { label: "Comments Policy", href: "/about/comments-policy" },
+  { label: "Unpublish Policy", href: "/about/unpublish-policy" },
+  { label: "Copyright & Distribution", href: "/about/copyright" },
+  { label: "Publication Schedule", href: "/about/publication-schedule" },
+  { label: "Subscribe", href: "/about/subscribe" },
+  { label: "Special Projects", href: "/about/special-projects" },
+  { label: "Sponsors", href: "/about/sponsors" },
+  { label: "Support / Donate", href: "/about/support" },
+  { label: "Join The Tech", href: "/about/join" },
+  { label: "Our Staff", href: "/about/staff" },
+];
+
+// Normalize trailing slashes so /about/ and /about both match.
+const current = Astro.url.pathname.replace(/\/+$/, "") || "/";
+---
+
+<nav class="about-nav" aria-label="About section">
+  <ul>
+    {aboutNav.map((item) => {
+      const isActive = current === item.href;
+      return (
+        <li>
+          <a href={item.href} class={isActive ? "is-active" : ""} aria-current={isActive ? "page" : undefined}>
+            {item.label}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</nav>
+
+<style>
+  .about-nav {
+    font-family: var(--font-sans);
+  }
+
+  .about-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-nav li {
+    margin: 0;
+  }
+
+  .about-nav a {
+    display: block;
+    padding: var(--space-2) var(--space-3);
+    border-left: 3px solid transparent;
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    line-height: var(--leading-ui);
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .about-nav a:hover {
+    color: var(--color-accent);
+  }
+
+  .about-nav a.is-active {
+    border-left-color: var(--color-accent);
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+</style>
