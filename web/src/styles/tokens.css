@@ -17,6 +17,7 @@
 
     /* --- Typography --- */
     --font-serif:         'Georgia', 'Times New Roman', serif;  /* article body */
+    --font-display:       'Merriweather', 'Georgia', serif;      /* nameplate, headlines */
     --font-sans:          'Inter', 'Helvetica Neue', sans-serif; /* UI chrome */
     --font-mono:          'JetBrains Mono', monospace;           /* code if needed */
 

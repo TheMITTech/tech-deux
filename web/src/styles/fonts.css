@@ -1,0 +1,33 @@
+@layer fonts {
+  /* --- Merriweather: nameplate, headlines, display --- */
+  @font-face {
+    font-family: 'Merriweather';
+    src: url('../assets/fonts/Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf') format('truetype-variations');
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Merriweather';
+    src: url('../assets/fonts/Merriweather/Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf') format('truetype-variations');
+    font-weight: 300 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* --- Inter: UI chrome, menus, nav --- */
+  @font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+}

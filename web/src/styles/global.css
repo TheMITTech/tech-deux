@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./fonts.css";
 @import "./tokens.css";
 
-@layer reset, tokens;
+@layer reset, fonts, tokens;
