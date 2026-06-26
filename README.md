@@ -31,8 +31,8 @@ Run these commands:
 \- git commit \-m {message}  
 \- git push origin {branch name}  
 after everything above, go to the repo, click compare & pull.   
-add long\_burrito as a reviewer on the right side of the page  
+add long\-burrito as a reviewer on the right side of the page  
 Notes:  
 branch name format: feature\_version  
 message: some useful message  
-long\_burrito is username of current Techno Director
+long\-burrito is username of current Techno Director
