@@ -16,7 +16,7 @@ TLDR: content-driven optimizations mean very fast loading, and component-based d
 
 5\. **cd** inside the now cloned repository, and run **pnpm install** to install dependencies.
 
-6\. To start Astro development server, run **pnpm run dev** and open at [http://localhost:4321/](http://localhost:4321/) 
+6\. To start Astro development server, run **pnpm run dev** in the /web directory and open at [http://localhost:4321/](http://localhost:4321/) 
 
 You should now be ready to start development of thetech.com’s “modern” rewrite.
 
